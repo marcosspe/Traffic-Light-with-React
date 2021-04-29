@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
 
 //include images into your bundle
@@ -6,8 +6,10 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 export function Home() {
+	const [color, setColor] = useState("");
+
 	return (
-		<div id="cuerpo" className="container bg-dark pt-3 pb-3">
+		<div id="cuerpo" className={"container bg-dark pt-3 pb-3 "}>
 			<div>
 				<button
 					id="rojo"
