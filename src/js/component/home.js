@@ -6,7 +6,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 export function Home() {
-	const [color, setColor] = useState("");
+	const [color, setColor] = useState("grey");
 
 	return (
 		<div id="cuerpo" className={"container bg-dark pt-3 pb-3 "}>
