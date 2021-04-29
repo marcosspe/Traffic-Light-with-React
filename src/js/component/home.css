@@ -1,0 +1,19 @@
+#rojo {
+    width:100px;
+    height:100px;
+    border-radius:150px;
+}
+#amarillo {
+    width:100px;
+    height:100px;
+    border-radius:150px;
+}
+#verde {
+    width:100px;
+    height:100px;
+    border-radius:150px;
+}
+#cuerpo{
+    width:130px;
+    border-radius: 20px;
+} 
