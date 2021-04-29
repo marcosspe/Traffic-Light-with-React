@@ -6,28 +6,24 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 export function Home() {
-	const [color, setColor] = useState("grey");
+	const [color, setColor] = useState("");
 
 	return (
 		<div id="cuerpo" className={"container bg-dark pt-3 pb-3 "}>
-			<div>
-				<button
-					id="rojo"
-					type="button"
-					className="btn btn-danger rounded-circle"></button>
-			</div>
-			<div>
-				<button
-					id="amarillo"
-					type="button"
-					className="btn btn-warning"></button>
-			</div>
-			<div>
-				<button
-					id="verde"
-					type="button"
-					className="btn btn-success"></button>
-			</div>
+			<button
+				id="rojo"
+				className={color == "red2" ? color : "red"}
+				onClick={() => setColor("red2")}></button>
+
+			<button
+				id="amarillo"
+				className={color == "yellow2" ? color : "yellow"}
+				onClick={() => setColor("yellow2")}></button>
+
+			<button
+				id="verde"
+				className={color == "green2" ? color : "green"}
+				onClick={() => setColor("green2")}></button>
 		</div>
 	);
 }
